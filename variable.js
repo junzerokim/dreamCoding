@@ -92,7 +92,7 @@ const ellie = {
   name: 'ellie',
   age: 20
 };
-ellie.age = 21;
+ellie.age = 29;
 
 // 5. Dynamic typing: dynamically typed language
 let text = 'hello';
