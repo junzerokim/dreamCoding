@@ -112,13 +112,54 @@ function randomQuiz(answer, printYes, printNo) {
     printNo();
   }
 }
-
+// anonymous function
 const printYes = function () {
   console.log('yes!');
 };
 
-const printNo = function () {
+// named function
+// better debugging in debugger's stack traces
+// recursions
+const printNo = function print() {
   console.log('no!');
 };
 randomQuiz('wrong', printYes, printNo);
 randomQuiz('love you', printYes, printNo);
+
+// Arrow function
+// always anonymous
+// const simplePrint = function () {
+//   console.log('simplePrint!');
+// };
+
+const simplePrint = () => console.log('simplePrint!');
+const add = (a, b) => a + b;
+const simpleMultiply = (a, b) => {
+  // do something more
+  return a * b;
+};
+
+// IIFE: Immediately Invoked Function Expression
+(function hello() {
+  console.log('IIFE');
+})();
+
+// Fun quiz time
+// function calculate(command, a, b)
+// command: add, substract, diviide, multiply, remainder
+
+function calculate(command, a, b) {
+  switch (command) {
+    case 'add':
+      return a + b;
+    case 'substract':
+      return a - b;
+    case 'divide':
+      return a / b;
+    case 'multiply':
+      return a * b;
+    case 'remainder':
+      return a % b;
+  }
+}
+console.log(calculate('multiply', 3, 8));
