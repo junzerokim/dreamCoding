@@ -71,9 +71,54 @@ const result = sum(1, 2); // 3
 console.log(`sum: ${sum(1, 2)}`);
 
 // 7. Early return, early exit
-// bad
+
+// bad case
 function upgradeUser(user) {
   if (user.point > 10) {
     // long upgrade logic...
   }
 }
+// good case
+function upgradeUser(user) {
+  if (user.point <= 10) {
+    return;
+  }
+  // long upgrade logic...
+}
+
+// First-class function
+// functions are treated like any other variable
+// can be assigned as a value to variable
+// can be passed as an argument to other functions.
+// can be returned by another function
+
+// 1. Function expression
+// a function declaration can be called earlier than it is defined. (hoisted)
+// a function expression is created when the execution reaches it.
+const print = function () { // anonymous function
+  console.log('print');
+};
+print();
+const printAgain = print;
+printAgain();
+const sumAgain = sum;
+console.log(sumAgain(1, 3));
+
+// 2. Callback function using function expression
+function randomQuiz(answer, printYes, printNo) {
+  if (answer === 'love you') {
+    printYes();
+  } else {
+    printNo();
+  }
+}
+
+const printYes = function () {
+  console.log('yes!');
+};
+
+const printNo = function () {
+  console.log('no!');
+};
+randomQuiz('wrong', printYes, printNo);
+randomQuiz('love you', printYes, printNo);
