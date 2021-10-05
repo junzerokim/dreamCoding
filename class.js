@@ -59,3 +59,17 @@ class Experiment {
 const experiment = new Experiment();
 console.log(experiment.publicField);
 console.log(experiment.privateField);
+
+class Counter {
+  constructor() {
+    this.counter = 0;
+  }
+
+  increase(runIf5Times) {
+    this.counter++;
+    console.log(this.counter);
+    if(this.counter % 5 === 0) {
+      runIf5Times();
+    }
+  }
+}
