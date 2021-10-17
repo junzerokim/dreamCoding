@@ -87,3 +87,4 @@ let cosmos = {
 
 const cosmosName = cosmos.getName();
 console.log(cosmosName);
+console.log('hello');
