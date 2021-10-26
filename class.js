@@ -89,7 +89,7 @@ class Shape {
   }
   
   draw() {
-    console.log(`drawing ${this.color} color of`);
+    console.log(`I will draw ${this.color} color!`);
   }
 
   getArea() {
