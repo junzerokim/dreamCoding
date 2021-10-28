@@ -23,5 +23,3 @@ console.log(cos.hasJob);
 
 delete cos.hasJob;
 console.log(cos.hasJob);
-
-console.log('hello');
