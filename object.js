@@ -1,3 +1,4 @@
+'use strict';
 // Objects
 // one of the JavaScript's data types.
 // a collection of related data and/or functionality.
@@ -91,3 +92,7 @@ for (key in user) {
 }
 console.clear();
 console.log(user3);
+
+const user4 = {};
+Object.assign(user4, user);
+console.log(user4);
