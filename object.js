@@ -68,13 +68,13 @@ console.log(cos.random);
 // 6. for..in vs for..of
 // for (key in obj) *여기서 key는 함수가 아니다.
 console.clear();
-for (key in cos) {
+for (let key in cos) {
   console.log(key);
 }
 
 // for (value of iterable) *여기서도 마찬가지로 value는 함수가 아니다.
 const array = [1, 2, 3, 4, 5];
-for (value of array) {
+for (let value of array) {
   console.log(value);
 }
 
@@ -87,7 +87,7 @@ console.log(user);
 
 // old way
 const user3 = {};
-for (key in user) {
+for (let key in user) {
   user3[key] = user[key];
 }
 console.clear();
