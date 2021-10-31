@@ -93,6 +93,12 @@ for (let key in user) {
 console.clear();
 console.log(user3);
 
-const user4 = {};
-Object.assign(user4, user);
+const user4 = Object.assign({}, user);
 console.log(user4);
+
+// another example
+const fruit1 = { color: 'red' };
+const fruit2 = { color: 'blue', size: 'big'};
+const mixed = Object.assign({}, fruit1, fruit2);
+console.log(mixed.color); // 계속 덮어씌워지므로 가장 최근에 선언된 fruit2로 출력된다.
+console.log(mixed.size);
