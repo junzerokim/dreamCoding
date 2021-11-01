@@ -48,4 +48,7 @@ console.log(fruits);
 
 // shift: remove an item from the beginning
 fruits.shift();
+fruits.shift();
 console.log(fruits);
+
+// note!! shift, unshift are slower than pop, push
