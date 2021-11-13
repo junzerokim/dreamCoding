@@ -164,3 +164,5 @@ function calculate(command, a, b) {
   }
 }
 console.log(calculate('multiply', 3, 8));
+
+test
