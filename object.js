@@ -80,7 +80,7 @@ for (let value of array) {
 
 // 7. Fun cloning
 // Object.assign(dest, [obj1, obj2, obj3...])
-const user = { name: 'cos', age: '29'};
+const user = { name: 'cos', age: '29' };
 const user2 = user;
 user2.name = 'coder';
 console.log(user);
