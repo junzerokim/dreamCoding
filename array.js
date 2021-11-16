@@ -52,3 +52,34 @@ fruits.shift();
 console.log(fruits);
 
 // note!! shift, unshift are slower than pop, push
+// splice: remove an item by index position
+fruits.push('🍓', '🍑', '🍋');
+console.log(fruits);
+fruits.splice(1, 1); // (어디서부터 지울건지, 몇 개를 지울건지)
+console.log(fruits);
+fruits.splice(1, 1, '🍏', '🍉'); // (", ", 추가할 값)
+console.log(fruits);
+
+// combine two arrays
+const fruits2 = ['🍐', '🥥'];
+const newFruits = fruits.concat(fruits2);
+console.log(newFruits);
+
+// 5. Searching
+// indexOf: find the index
+console.clear();
+console.log(fruits);
+console.log(fruits.indexOf('🍎'));
+console.log(fruits.indexOf('🍉'));
+console.log(fruits.indexOf('🍐'))
+
+// includes
+console.log(fruits.includes('🍏'));
+console.log(fruits.includes('🥥'));
+
+// lastIndexOf
+console.clear();
+fruits.push('🍎');
+console.log(fruits);
+console.log(fruits.indexOf('🍎'));
+console.log(fruits.lastIndexOf('🍎'));
