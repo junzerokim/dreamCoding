@@ -69,12 +69,12 @@ console.log(newFruits);
 // indexOf: find the index
 console.clear();
 console.log(fruits);
-console.log(fruits.indexOf('🍎'));
+console.log(fruits.indexOf('🍎')); // 순번을 알 수 있다.
 console.log(fruits.indexOf('🍉'));
-console.log(fruits.indexOf('🍐'))
+console.log(fruits.indexOf('🍐'));
 
 // includes
-console.log(fruits.includes('🍏'));
+console.log(fruits.includes('🍏')); // true, false
 console.log(fruits.includes('🥥'));
 
 // lastIndexOf
@@ -82,4 +82,4 @@ console.clear();
 fruits.push('🍎');
 console.log(fruits);
 console.log(fruits.indexOf('🍎'));
-console.log(fruits.lastIndexOf('🍎'));
+console.log(fruits.lastIndexOf('🍎')); // 데이터가 겹칠 경우, 마지막 순번부터 측정된다.
